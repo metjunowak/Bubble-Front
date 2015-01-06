@@ -1,0 +1,71 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+#start {
+	min-height: 100%;
+	background: -webkit-radial-gradient(#ffe4b1, #ffaf16); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(#ffe4b1, #ffaf16); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(#ffe4b1, #ffaf16); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(at 50% 460px, #ffe4b1, #ffaf16); /* Standard syntax */
+}
+
+#navigation {
+	position: fixed;
+	left: 50%;
+	margin-left: -355px;
+}
+
+#navigation ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0;
+	margin-left: -12px; 
+}
+
+#navigation ul li {
+	display: inline-block;
+	margin: 17px 15px;
+	width: 112px;
+	height: 112px;
+	border: 1px solid #fff;
+	border-radius: 56px;
+	font-family: "Open Sans";
+	font-size: 26px;
+	color: #fff;
+	font-weight: 100;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#navigation ul li:hover {
+	border-color: #1a2f5a;
+	color: #1a2f5a;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: inherit;
+	padding-top: 38px;
+	padding-bottom: 41px;
+	margin-top: -1px;
+	margin-left: -1px;
+	margin-right: -1px;
+	display: block;
+	border-radius: 56px;
+}
+
+.nav-link:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+#logo {
+	padding-top: 195px;
+	text-align: center;
+}
