@@ -7,57 +7,46 @@ body, html {
 	height: 100%;
 }
 
-#start {
-	min-height: 100%;
-	background: -webkit-radial-gradient(#ffe4b1, #ffaf16); /* Safari 5.1 to 6.0 */
-	background: -o-radial-gradient(#ffe4b1, #ffaf16); /* For Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(#ffe4b1, #ffaf16); /* For Firefox 3.6 to 15 */
-	background: radial-gradient(at 50% 460px, #ffe4b1, #ffaf16); /* Standard syntax */
-}
+/* MENU */
 
 #navigation {
 	position: fixed;
-	left: 50%;
-	margin-left: -355px;
+	background-color: #d92e39;
+	width: 100%;
+	text-align: center;
+	height: 110px;
+	z-index: 10;
 }
 
 #navigation ul {
 	list-style-type: none;
 	padding: 0px;
-	margin: 0;
-	margin-left: -12px; 
+	margin-top: 0px;
+	height: 100%;
 }
 
 #navigation ul li {
 	display: inline-block;
-	margin: 17px 15px;
-	width: 112px;
-	height: 112px;
-	border: 1px solid #fff;
-	border-radius: 56px;
-	font-family: "Open Sans";
-	font-size: 26px;
 	color: #fff;
-	font-weight: 100;
-	text-align: center;
-	vertical-align: middle;
+	font-family: 'Raleway', 'Josefin Sans';
+    font-weight: 300;
+    font-size: 30px;
+    width: 150px;
+    height: 100%;
+    text-align: center;
 }
 
 #navigation ul li:hover {
 	border-color: #1a2f5a;
-	color: #1a2f5a;
+	color: #fac902;
 }
 
 .nav-link {
 	text-decoration: none;
 	color: inherit;
-	padding-top: 38px;
-	padding-bottom: 41px;
-	margin-top: -1px;
-	margin-left: -1px;
-	margin-right: -1px;
-	display: block;
-	border-radius: 56px;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
 }
 
 .nav-link:hover {
@@ -65,7 +54,83 @@ body, html {
 	color: inherit;
 }
 
+
+/* Menu icons */
+
+.nav-link .home {
+	background: url('../img/menusprite.png') no-repeat -3px -3px; width: 46px; height: 44px;
+	display: block;
+	margin: 15px auto 5px;
+}
+
+li:hover .nav-link .home {
+	background: url('../img/menusprite.png') no-repeat -3px -52px; width: 46px; height: 44px;
+}
+
+.nav-link .faq {
+	background: url('../img/menusprite.png') no-repeat -55px -3px; width: 46px; height: 45px;
+	display: block;
+	margin: 15px auto 5px;
+}
+
+li:hover .nav-link .faq {
+	background: url('../img/menusprite.png') no-repeat -55px -53px; width: 46px; height: 45px;
+}
+
+.nav-link .offer {
+	background: url('../img/menusprite.png') no-repeat -100px -3px; width: 45px; height: 45px;
+	display: block;
+	margin: 15px auto 5px;
+}
+
+li:hover .nav-link .offer {
+	background: url('../img/menusprite.png') no-repeat -100px -54px; width: 45px; height: 45px;
+}
+
+.nav-link .photo {
+	background: url('../img/menusprite.png') no-repeat -145px -3px; width: 46px; height: 44px;
+	display: block;
+	margin: 15px auto 6px;
+}
+
+li:hover .nav-link .photo {
+	background: url('../img/menusprite.png') no-repeat -145px -53px; width: 46px; height: 44px;
+}
+
+.nav-link .contact {
+	background: url('../img/menusprite.png') no-repeat 91.163% 15.493%; 
+	width: 45px;
+	height: 33px;
+	display: block;
+	margin: 15px auto 8px;
+}
+
+li:hover .nav-link .contact {
+	background: url('../img/menusprite.png') no-repeat 91.163% 84.507%; width: 45px; height: 33px;
+}
+
+
+
+/* START */
+
+
 #logo {
-	padding-top: 195px;
+	text-align: center;
+	background: url('../img/logo.png') no-repeat;
+	background-position: center 0;
+	min-height: 520px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	z-index: 5;
+	margin-top: 5%;
+}
+
+#start {
+	height: 100%;
+	min-height: 610px;
+	background: url('../img/bg.jpg');
+	background-size: 100%;
+	background-position: 0 -110px;
 	text-align: center;
 }
