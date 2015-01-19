@@ -53,6 +53,10 @@ body, html {
 		font-size: 26px;
 	}
 
+	.nav-link span {
+		margin-right: 2px;
+	}
+
 	#navigation {
 		position: fixed;
 		background-color: #1a2f5a;
@@ -68,14 +72,14 @@ body, html {
 		background-size : 182px 73px;
 		display: inline-block;
 		margin-top: 5px;
-		margin-bottom: -5px;
+		margin-bottom: -6px;
 	}
 
 	li:hover .nav-link .home {
 		background: url('../img/menusprite.png') no-repeat -3px -35px; width: 35px; height: 35px;
 		background-size : 182px 73px;
 		margin-top: 5px;
-		margin-bottom: -5px;
+		margin-bottom: -6px;
 	}
 
 	.nav-link .faq {
@@ -83,14 +87,14 @@ body, html {
 		background-size : 182px 73px;
 		display: inline-block;
 		margin-top: 5px;
-		margin-bottom: -5px;
+		margin-bottom: -7px;
 	}
 
 	li:hover .nav-link .faq {
 		background: url('../img/menusprite.png') no-repeat -38px -36px; width: 35px; height: 35px;
 		background-size : 182px 73px;
 		margin-top: 5px;
-		margin-bottom: -5px;
+		margin-bottom: -7px;
 	}
 
 	.nav-link .offer {
@@ -98,14 +102,14 @@ body, html {
 		background-size : 182px 73px;
 		display: inline-block;
 		margin-top: 5px;
-		margin-bottom: -6px;
+		margin-bottom: -7px;
 	}
 
 	li:hover .nav-link .offer {
 		background: url('../img/menusprite.png') no-repeat -70px -37px; width: 31px; height: 35px;
 		background-size : 182px 73px;
 		margin-top: 5px;
-		margin-bottom: -6px;
+		margin-bottom: -7px;
 	}
 
 	.nav-link .photo {
@@ -259,4 +263,24 @@ body, html {
 	margin-right: auto;
 	left: 0;
 	right: 0;
+}
+
+/* FAQ */
+#faq {
+	height: 300px;
+}
+
+#offer {
+	height: 450px;
+	background-color: #555;
+}
+
+#photo {
+	height: 500px;
+	background-color: yellow;
+}
+
+#contact {
+	height: 400px;
+	background-color: red;
 }
