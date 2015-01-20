@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var menuHeight = 50;
+  var menuHeight = $('#navigation').height();
   var divs = new Array('start','faq','offer','photo','contact');
 
   var breakPoints = [0];
