@@ -1,37 +1,54 @@
-$(document).ready(function(){
-	var start_bp = $('#start').height();
-	var faq_bp = $('#faq').height() + $('#faq').position().top;
-	var offer_bp = $('#offer').height() + $('#offer').position().top;;
-	var photo_bp = $('#photo').height() + $('#photo').position().top;;
-	var contact_bp = $('#contact').height() + $('#contact').position().top;;
-	var lastScrollTop;
-	var flag = false;
+$(document).ready(function() {
+  var menuHeight = 50;
+  var divs = new Array('start','faq','offer','photo','contact');
+
+  var breakPoints = [0];
+  var flag = 0;
+
+  $.each(divs, function(key, value) {
+    breakPoints.push(getBreakPoints(value));
+  });
+
+  function getBreakPoints(div) {
+    var bp = $('#'+div).height() + $('#'+div).position().top - menuHeight;
+    return bp;
+  }
+
+  function goDown(position) {
+    var index = 0;
+    $.each(breakPoints, function(key, value) {
+      if(position > value) {
+        index = key+1;
+      }
+    });
+    
+    if(position > flag) {
+      $("html, body").animate({ scrollTop: breakPoints[index] }, 600);
+    }
+
+    flag = breakPoints[index];
+
+  }
+
+  function goUp(position) {
+
+  }
+
+
+
 	$(window).scroll(function(event){
-   		var st = $(this).scrollTop();
-   		if (st === 0) {
-   			flag = false;
-   		}
-   		if (st > lastScrollTop) {
-			// downscroll code
-			console.log('down');
-   			if((st >= 0) && (st < start_bp) && flag === false) {
-   					flag = true;
-	    			$("html, body").one().animate({ scrollTop: start_bp }, 600, function() { 
-	       				//flag = true;
-	       				console.log('done');
-	       			});
-    			
-    		}
-    		else if((st > start_bp) && (st < faq_bp)) {
-    			//$("html, body").animate({ scrollTop: faq_bp });
-    		}
+   	var st = $(this).scrollTop();
+   	
+   	if (st > lastScrollTop) {
+      goDown(st);
+   	} 
+   	else if(st < lastScrollTop) {
+      //upscroll
+   		//goUp(st);
+   	}
 
-   		} 
-   		else if(st < lastScrollTop) {
-   			// upscroll code
-   			console.log('up');
-   		}
-
-   		lastScrollTop = st;
+   	lastScrollTop = st;
 	});
+
+
 });
