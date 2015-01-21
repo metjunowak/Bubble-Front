@@ -211,6 +211,101 @@ body, html {
 		background: url('../img/menusprite.png') no-repeat 91.163% 84.507%; width: 45px; height: 33px;
 	}
 
+	/* SMALL MENU */
+
+	.nav-small ul li {
+		font-size: 26px;
+	}
+
+	.nav-small .nav-link span {
+		margin-right: 2px;
+	}
+
+	#navigation.nav-small {
+		position: fixed;
+		background-color: #1a2f5a;
+		opacity: 1;
+		width: 100%;
+		text-align: center;
+		height: 50px;
+		z-index: 10;
+	}
+
+	.nav-small .nav-link .home {
+		background: url('../img/menusprite.png') no-repeat -3px -1px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: -6px;
+	}
+
+	.nav-small li:hover .nav-link .home {
+		background: url('../img/menusprite.png') no-repeat -3px -35px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		margin-top: 5px;
+		margin-bottom: -6px;
+	}
+
+	.nav-small .nav-link .faq {
+		background: url('../img/menusprite.png') no-repeat -38px -1px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: -7px;
+	}
+
+	.nav-small li:hover .nav-link .faq {
+		background: url('../img/menusprite.png') no-repeat -38px -36px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		margin-top: 5px;
+		margin-bottom: -7px;
+	}
+
+	.nav-small .nav-link .offer {
+		background: url('../img/menusprite.png') no-repeat -70px -1px; width: 31px; height: 35px;
+		background-size : 182px 73px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: -7px;
+	}
+
+	.nav-small li:hover .nav-link .offer {
+		background: url('../img/menusprite.png') no-repeat -70px -37px; width: 31px; height: 35px;
+		background-size : 182px 73px;
+		margin-top: 5px;
+		margin-bottom: -7px;
+	}
+
+	.nav-small .nav-link .photo {
+		background: url('../img/menusprite.png') no-repeat -101px -1px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: -7px;
+	}
+
+	.nav-small li:hover .nav-link .photo {
+		background: url('../img/menusprite.png') no-repeat -101px -36px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		margin-top: 5px;
+		margin-bottom: -7px;
+	}
+
+	.nav-small .nav-link .contact {
+		background: url('../img/menusprite.png') no-repeat -136px -1px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: -6px;
+	}
+
+	.nav-small li:hover .nav-link .contact {
+		background: url('../img/menusprite.png') no-repeat -136px -35px; width: 35px; height: 35px;
+		background-size : 182px 73px;
+		margin-top: 5px;
+		margin-bottom: -6px;
+	}
+
 }
 
 /* START */
@@ -268,11 +363,22 @@ body, html {
 /* FAQ */
 #faq {
 	height: 450px;
+
+}
+
+#faq .content {
+	width: 850px;
+	margin: 30px auto;
+}
+
+#faq .content div {
+	width: 33%;
+	display: inline-block;
 }
 
 #offer {
 	height: 450px;
-	background-color: #13264d;
+	background-color: #999;
 }
 
 #photo {
@@ -283,4 +389,30 @@ body, html {
 #contact {
 	height: 400px;
 	background-color: red;
+}
+
+/* ICONS */
+
+.football-ico {
+	background: url('../img/icons.png') no-repeat -2px 0;
+	width: 177px;
+	height: 178px;
+	display: block;
+	margin: 0 auto;
+}
+
+.bowling-ico {
+	background: url('../img/icons.png') no-repeat -183px 0;
+	width: 178px;
+	height: 178px;
+	display: block;
+	margin: 0 auto;
+}
+
+.sumo-ico {
+	background: url('../img/icons.png') no-repeat -368px 0;
+	width: 154px;
+	height: 177px;
+	display: block;
+	margin: 0 auto;
 }
