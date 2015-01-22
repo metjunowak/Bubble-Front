@@ -24,7 +24,7 @@ body, html {
 	font-family: 'Raleway', 'Josefin Sans';
     font-weight: 300;
     font-size: 30px;
-    width: 175px;
+    min-width: 175px;
     height: 100%;
     text-align: center;
 }
@@ -81,13 +81,13 @@ body, html {
 		background: url('../img/menusprite.png') no-repeat -55px -53px; width: 46px; height: 45px;
 	}
 
-	.nav-link .offer {
+	.nav-link .scenarios {
 		background: url('../img/menusprite.png') no-repeat -100px -3px; width: 45px; height: 45px;
 		display: block;
 		margin: 15px auto 5px;
 	}
 
-	li:hover .nav-link .offer {
+	li:hover .nav-link .scenarios {
 		background: url('../img/menusprite.png') no-repeat -100px -54px; width: 45px; height: 45px;
 	}
 
@@ -102,7 +102,7 @@ body, html {
 	}
 
 	.nav-link .contact {
-		background: url('../img/menusprite.png') no-repeat 91.163% 15.493%; 
+		background: url('../img/menusprite.png') no-repeat -196px -11px; 
 		width: 45px;
 		height: 33px;
 		display: block;
@@ -110,7 +110,17 @@ body, html {
 	}
 
 	li:hover .nav-link .contact {
-		background: url('../img/menusprite.png') no-repeat 91.163% 84.507%; width: 45px; height: 33px;
+		background: url('../img/menusprite.png') no-repeat -196px -60px; width: 45px; height: 33px;
+	}
+
+	.nav-link .offer {
+		background: url('../img/menusprite.png') no-repeat -245px -3px; width: 45px; height: 49px;
+		display: block;
+		margin: 15px auto 0px;
+	}
+
+	li:hover .nav-link .offer {
+		background: url('../img/menusprite.png') no-repeat -245px -53px; width: 45px; height: 49px;
 	}
 
 	/* SMALL MENU */
@@ -135,7 +145,7 @@ body, html {
 
 	.nav-small .nav-link .home {
 		background: url('../img/menusprite.png') no-repeat -3px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		display: inline-block;
 		margin-top: 5px;
 		margin-bottom: -6px;
@@ -143,14 +153,14 @@ body, html {
 
 	.nav-small li:hover .nav-link .home {
 		background: url('../img/menusprite.png') no-repeat -3px -35px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		margin-top: 5px;
 		margin-bottom: -6px;
 	}
 
 	.nav-small .nav-link .faq {
 		background: url('../img/menusprite.png') no-repeat -38px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		display: inline-block;
 		margin-top: 5px;
 		margin-bottom: -7px;
@@ -158,29 +168,29 @@ body, html {
 
 	.nav-small li:hover .nav-link .faq {
 		background: url('../img/menusprite.png') no-repeat -38px -36px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		margin-top: 5px;
 		margin-bottom: -7px;
 	}
 
-	.nav-small .nav-link .offer {
+	.nav-small .nav-link .scenarios {
 		background: url('../img/menusprite.png') no-repeat -70px -1px; width: 31px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		display: inline-block;
 		margin-top: 5px;
 		margin-bottom: -7px;
 	}
 
-	.nav-small li:hover .nav-link .offer {
+	.nav-small li:hover .nav-link .scenarios {
 		background: url('../img/menusprite.png') no-repeat -70px -37px; width: 31px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		margin-top: 5px;
 		margin-bottom: -7px;
 	}
 
 	.nav-small .nav-link .photo {
 		background: url('../img/menusprite.png') no-repeat -101px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		display: inline-block;
 		margin-top: 5px;
 		margin-bottom: -7px;
@@ -188,14 +198,14 @@ body, html {
 
 	.nav-small li:hover .nav-link .photo {
 		background: url('../img/menusprite.png') no-repeat -101px -36px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		margin-top: 5px;
 		margin-bottom: -7px;
 	}
 
 	.nav-small .nav-link .contact {
 		background: url('../img/menusprite.png') no-repeat -136px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
 		display: inline-block;
 		margin-top: 5px;
 		margin-bottom: -6px;
@@ -203,7 +213,22 @@ body, html {
 
 	.nav-small li:hover .nav-link .contact {
 		background: url('../img/menusprite.png') no-repeat -136px -35px; width: 35px; height: 35px;
-		background-size : 182px 73px;
+		background-size : 205px 73px;
+		margin-top: 5px;
+		margin-bottom: -6px;
+	}
+
+	.nav-small .nav-link .offer {
+		background: url('../img/menusprite.png') no-repeat -171px -1px; width: 36px; height: 35px;
+		background-size : 205px 73px;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: -6px;
+	}
+
+	.nav-small li:hover .nav-link .offer {
+		background: url('../img/menusprite.png') no-repeat -171px -36px; width: 36px; height: 35px;
+		background-size : 205px 73px;
 		margin-top: 5px;
 		margin-bottom: -6px;
 	}
