@@ -24,7 +24,7 @@ body, html {
 	font-family: 'Raleway', 'Josefin Sans';
     font-weight: 300;
     font-size: 30px;
-    width: 150px;
+    width: 175px;
     height: 100%;
     text-align: center;
 }
@@ -47,104 +47,6 @@ body, html {
 	color: inherit;
 }
 
-@media screen and (max-height: 779px) {
-
-	#navigation ul li {
-		font-size: 26px;
-	}
-
-	.nav-link span {
-		margin-right: 2px;
-	}
-
-	#navigation {
-		position: fixed;
-		background-color: #1a2f5a;
-		opacity: 0.9;
-		width: 100%;
-		text-align: center;
-		height: 50px;
-		z-index: 10;
-	}
-
-	.nav-link .home {
-		background: url('../img/menusprite.png') no-repeat -3px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		display: inline-block;
-		margin-top: 5px;
-		margin-bottom: -6px;
-	}
-
-	li:hover .nav-link .home {
-		background: url('../img/menusprite.png') no-repeat -3px -35px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		margin-top: 5px;
-		margin-bottom: -6px;
-	}
-
-	.nav-link .faq {
-		background: url('../img/menusprite.png') no-repeat -38px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		display: inline-block;
-		margin-top: 5px;
-		margin-bottom: -7px;
-	}
-
-	li:hover .nav-link .faq {
-		background: url('../img/menusprite.png') no-repeat -38px -36px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		margin-top: 5px;
-		margin-bottom: -7px;
-	}
-
-	.nav-link .offer {
-		background: url('../img/menusprite.png') no-repeat -70px -1px; width: 31px; height: 35px;
-		background-size : 182px 73px;
-		display: inline-block;
-		margin-top: 5px;
-		margin-bottom: -7px;
-	}
-
-	li:hover .nav-link .offer {
-		background: url('../img/menusprite.png') no-repeat -70px -37px; width: 31px; height: 35px;
-		background-size : 182px 73px;
-		margin-top: 5px;
-		margin-bottom: -7px;
-	}
-
-	.nav-link .photo {
-		background: url('../img/menusprite.png') no-repeat -101px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		display: inline-block;
-		margin-top: 5px;
-		margin-bottom: -7px;
-	}
-
-	li:hover .nav-link .photo {
-		background: url('../img/menusprite.png') no-repeat -101px -36px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		margin-top: 5px;
-		margin-bottom: -7px;
-	}
-
-	.nav-link .contact {
-		background: url('../img/menusprite.png') no-repeat -136px -1px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		display: inline-block;
-		margin-top: 5px;
-		margin-bottom: -6px;
-	}
-
-	li:hover .nav-link .contact {
-		background: url('../img/menusprite.png') no-repeat -136px -35px; width: 35px; height: 35px;
-		background-size : 182px 73px;
-		margin-top: 5px;
-		margin-bottom: -6px;
-	}
-
-}
-
-@media screen and (min-height: 780px) {
 
 	#navigation {
 		position: fixed;
@@ -306,7 +208,7 @@ body, html {
 		margin-bottom: -6px;
 	}
 
-}
+
 
 /* START */
 
@@ -367,23 +269,88 @@ body, html {
 }
 
 #faq .content {
-	width: 850px;
+	width: 925px;
 	margin: 30px auto;
+	text-align: center;
+	margin-bottom: 0px;
 }
 
 #faq .content div {
-	width: 33%;
+	width: 30%;
 	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin: auto 14px;
 }
 
+#faq .content div h2 {
+	font-size: 48px;
+	font-family: "Open Sans","Raleway";
+	font-weight: 300;
+	color: #111;
+	margin: 15px auto;
+}
+
+#faq .content div p {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: #222;
+	text-align: justify;
+	line-height: 20px;
+}
+
+
+/* OFFER */
+
 #offer {
-	height: 450px;
-	background-color: #999;
+	min-height: 460px;
+	background-color: #34495e;
+}
+
+#offer .content {
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+}
+
+#offer .content div {
+	position: absolute;
+	display: inline-block;
+	text-align: left;
+	margin-left: 100px;
+	float: left;
+	width: 390px;
+}
+
+#offer .content h1 {
+	color: #fff;
+	font-size: 50px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	margin-top: 10px;
+	margin-left: 70px;
+	text-align: right;
+}
+
+#offer .content div p {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: #fff;
+	text-align: justify;
+	line-height: 20px;
+}
+
+.offer-img {
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: -13px;
 }
 
 #photo {
 	height: 500px;
-	background-color: yellow;
+	background-color: #fff;
 }
 
 #contact {
