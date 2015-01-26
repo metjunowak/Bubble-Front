@@ -29,7 +29,7 @@ body, html {
     text-align: center;
 }
 
-#navigation ul li:hover {
+#navigation ul li:hover, .nav-link.active {
 	border-color: #1a2f5a;
 	color: #fac902;
 }
@@ -67,7 +67,7 @@ body, html {
 		margin: 15px auto 5px;
 	}
 
-	li:hover .nav-link .home {
+	li:hover .nav-link .home, .nav-link.active .home {
 		background: url('../img/menusprite.png') no-repeat -3px -52px; width: 46px; height: 44px;
 	}
 
@@ -77,7 +77,7 @@ body, html {
 		margin: 15px auto 5px;
 	}
 
-	li:hover .nav-link .faq {
+	li:hover .nav-link .faq, .nav-link.active .faq {
 		background: url('../img/menusprite.png') no-repeat -55px -53px; width: 46px; height: 45px;
 	}
 
@@ -87,7 +87,7 @@ body, html {
 		margin: 15px auto 5px;
 	}
 
-	li:hover .nav-link .scenarios {
+	li:hover .nav-link .scenarios, .nav-link.active .scenarios {
 		background: url('../img/menusprite.png') no-repeat -100px -54px; width: 45px; height: 45px;
 	}
 
@@ -97,7 +97,7 @@ body, html {
 		margin: 15px auto 6px;
 	}
 
-	li:hover .nav-link .photo {
+	li:hover .nav-link .photo, .nav-link.active .photo {
 		background: url('../img/menusprite.png') no-repeat -145px -53px; width: 46px; height: 44px;
 	}
 
@@ -109,7 +109,7 @@ body, html {
 		margin: 15px auto 8px;
 	}
 
-	li:hover .nav-link .contact {
+	li:hover .nav-link .contact, .nav-link.active .contact {
 		background: url('../img/menusprite.png') no-repeat -196px -60px; width: 45px; height: 33px;
 	}
 
@@ -119,7 +119,7 @@ body, html {
 		margin: 15px auto 0px;
 	}
 
-	li:hover .nav-link .offer {
+	li:hover .nav-link .offer, .nav-link.active .offer {
 		background: url('../img/menusprite.png') no-repeat -245px -53px; width: 45px; height: 49px;
 	}
 
@@ -135,7 +135,7 @@ body, html {
 
 	#navigation.nav-small {
 		position: fixed;
-		background-color: #1a2f5a;
+		background-color: #2c3e50;
 		opacity: 1;
 		width: 100%;
 		text-align: center;
@@ -151,7 +151,7 @@ body, html {
 		margin-bottom: -6px;
 	}
 
-	.nav-small li:hover .nav-link .home {
+	.nav-small li:hover .nav-link .home, .nav-small .nav-link.active .home {
 		background: url('../img/menusprite.png') no-repeat -3px -35px; width: 35px; height: 35px;
 		background-size : 205px 73px;
 		margin-top: 5px;
@@ -166,7 +166,7 @@ body, html {
 		margin-bottom: -7px;
 	}
 
-	.nav-small li:hover .nav-link .faq {
+	.nav-small li:hover .nav-link .faq, .nav-small .nav-link.active .faq {
 		background: url('../img/menusprite.png') no-repeat -38px -36px; width: 35px; height: 35px;
 		background-size : 205px 73px;
 		margin-top: 5px;
@@ -181,7 +181,7 @@ body, html {
 		margin-bottom: -7px;
 	}
 
-	.nav-small li:hover .nav-link .scenarios {
+	.nav-small li:hover .nav-link .scenarios, .nav-small .nav-link.active .scenarios {
 		background: url('../img/menusprite.png') no-repeat -70px -37px; width: 31px; height: 35px;
 		background-size : 205px 73px;
 		margin-top: 5px;
@@ -196,7 +196,7 @@ body, html {
 		margin-bottom: -7px;
 	}
 
-	.nav-small li:hover .nav-link .photo {
+	.nav-small li:hover .nav-link .photo, .nav-small .nav-link.active .photo {
 		background: url('../img/menusprite.png') no-repeat -101px -36px; width: 35px; height: 35px;
 		background-size : 205px 73px;
 		margin-top: 5px;
@@ -211,7 +211,7 @@ body, html {
 		margin-bottom: -6px;
 	}
 
-	.nav-small li:hover .nav-link .contact {
+	.nav-small li:hover .nav-link .contact, .nav-small .nav-link.active .contact {
 		background: url('../img/menusprite.png') no-repeat -136px -35px; width: 35px; height: 35px;
 		background-size : 205px 73px;
 		margin-top: 5px;
@@ -226,7 +226,7 @@ body, html {
 		margin-bottom: -6px;
 	}
 
-	.nav-small li:hover .nav-link .offer {
+	.nav-small li:hover .nav-link .offer, .nav-small .nav-link.active .offer {
 		background: url('../img/menusprite.png') no-repeat -171px -36px; width: 36px; height: 35px;
 		background-size : 205px 73px;
 		margin-top: 5px;
@@ -288,19 +288,19 @@ body, html {
 }
 
 /* FAQ */
-#faq {
+#scenarios {
 	height: 450px;
 
 }
 
-#faq .content {
+#scenarios .content {
 	width: 925px;
 	margin: 30px auto;
 	text-align: center;
 	margin-bottom: 0px;
 }
 
-#faq .content div {
+#scenarios .content div {
 	width: 30%;
 	display: inline-block;
 	text-align: center;
@@ -308,7 +308,7 @@ body, html {
 	margin: auto 14px;
 }
 
-#faq .content div h2 {
+#scenarios .content div h2 {
 	font-size: 48px;
 	font-family: "Open Sans","Raleway";
 	font-weight: 300;
@@ -316,7 +316,7 @@ body, html {
 	margin: 15px auto;
 }
 
-#faq .content div p {
+#scenarios .content div p {
 	font-size: 14px;
 	font-family: "Open Sans";
 	color: #222;
@@ -329,7 +329,7 @@ body, html {
 
 #offer {
 	min-height: 460px;
-	background-color: #34495e;
+	background-color: #18bc9c;
 }
 
 #offer .content {
@@ -342,7 +342,7 @@ body, html {
 	position: absolute;
 	display: inline-block;
 	text-align: left;
-	margin-left: 100px;
+	margin-left: 50px;
 	float: left;
 	width: 390px;
 }
@@ -370,7 +370,12 @@ body, html {
 	float: left;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: -13px;
+
+}
+
+#faq {
+	height: 500px;
+	background-color: #fff;
 }
 
 #photo {

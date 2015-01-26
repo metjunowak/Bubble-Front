@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var menuHeight = 50;
-  var divs = new Array('start','faq','offer','photo','contact');
+  var divs = new Array('start','scenarios','offer','faq','photo','contact');
 
   var breakPoints = [0];
   var flag = true;
@@ -55,18 +55,32 @@ $(document).ready(function() {
     $('#navigation').animate({height:110},700)
   }
 
+  console.log(breakPoints);
 
 	$(window).scroll(function(event) {
    	var st = $(this).scrollTop();
 
-    if(st>200) {
+    if(st>150) {
       $("#navigation").addClass("nav-small");
     }
-    else if(st<200) {
+    else if(st<150) {
       $("#navigation").removeClass("nav-small");
     }
-   	
-   	if (st > lastScrollTop && flag) {
+  	
+    $.each(breakPoints, function(key, value) {
+      if(st>=value && (st<breakPoints[key+1])) {
+        $('.nav-link').removeClass('active');
+        $('a[href="#'+divs[key]+'"]').addClass('active');
+
+        if(st + $(window).height() > $(document).height() - 30) {
+          $('.nav-link').removeClass('active');
+          $('a[href="#contact"]').addClass('active');
+        }
+      }
+    });
+
+
+   	/*if (st > lastScrollTop && flag) {
       flag = false;
       showSmallMenu();
       goDown(st);
@@ -75,7 +89,7 @@ $(document).ready(function() {
    	else if(st < lastScrollTop && flag) {
       flag = false;
    		goUp(st);
-   	}
+   	}*/
 
    	lastScrollTop = st;
 	});
