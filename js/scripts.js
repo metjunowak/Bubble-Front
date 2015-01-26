@@ -1,10 +1,20 @@
 $(document).ready(function() {
+
+  var mapOptions = {
+    zoom: 15,
+    center: new google.maps.LatLng(50.197967, 19.427067),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById("contact"), mapOptions); 
+
+
   var menuHeight = 50;
   var divs = new Array('start','scenarios','offer','faq','photo','contact');
 
   var breakPoints = [0];
   var flag = true;
   var lastScrollTop;
+
 
   $.each(divs, function(key, value) {
     breakPoints.push(getBreakPoints(value));
@@ -16,7 +26,7 @@ $(document).ready(function() {
     return bp;
   }
 
-  function goDown(position) {
+  /*function goDown(position) {
     var index = 0;
     $.each(breakPoints, function(key, value) {
       if(position > value) {
@@ -28,9 +38,9 @@ $(document).ready(function() {
     setTimeout(function() {
       flag = true;
     }, 800);
-  }
+  }*/
 
-  function goUp(position) {
+  /*function goUp(position) {
     var index = 0;
     $.each(breakPoints, function(key, value) {
       if(position >= value) {
@@ -45,7 +55,7 @@ $(document).ready(function() {
     setTimeout(function() {
       flag = true;
     }, 800);   
-  }
+  }*/
 
   function showSmallMenu() {
     $('#navigation').animate({height:50},700)
@@ -55,6 +65,7 @@ $(document).ready(function() {
     $('#navigation').animate({height:110},700)
   }
 
+
   $('.nav-link').click(function(event) {
     event.preventDefault();
     var a = $(this).attr('href').substring(1);
@@ -62,7 +73,6 @@ $(document).ready(function() {
     $(window).scrollTop(b);
     console.log(b);
   });
-
 
 
 	$(window).scroll(function(event) {

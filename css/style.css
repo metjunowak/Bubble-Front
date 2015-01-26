@@ -347,7 +347,7 @@ body, html {
 	width: 390px;
 }
 
-#offer .content h1 {
+#offer .content h1, #contact-data h1 {
 	color: #fff;
 	font-size: 50px;
 	font-family: "Open Sans";
@@ -384,9 +384,61 @@ body, html {
 }
 
 #contact {
-	height: 400px;
-	background-color: red;
+	height: 430px;
+	background-color: #1a2f5a !important;
 }
+
+#contact-data {
+	text-align: right;
+	position:absolute;
+	margin-top: -390px;
+	margin-left: 13%;
+	z-index: 100;
+}
+
+#contact-data h1 {
+	z-index: 100;
+	margin-bottom: 15px;
+	font-size: 55px;
+}
+
+#contact-data p {
+	font-size: 30px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	color: #fff;
+	vertical-align: center;
+	margin: 20px auto;
+	text-align: right;
+}
+
+#contact-data p u {
+	margin-right: 20px;
+	float: left;
+	display: inline-block;
+}
+
+.contact-mail-ico {
+	background: url('../img/icons.png') no-repeat -531px -4px; width: 45px; height: 43px;
+	display: inline-block;
+	margin-bottom: -20px;
+	margin-right: 15px;
+	float: left;
+}
+
+.contact-phone-ico {
+	background: url('../img/icons.png') no-repeat -534px -56px; width: 44px; height: 46px;
+	display: inline-block;
+	margin-bottom: -20px;
+	margin-right: 15px;
+	float: left;
+}
+
+
+.gm-style {
+	opacity: 0.2;
+}
+
 
 /* ICONS */
 
