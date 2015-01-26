@@ -290,12 +290,12 @@ body, html {
 /* FAQ */
 #scenarios {
 	height: 450px;
-
+	padding-top: 30px;
 }
 
 #scenarios .content {
 	width: 925px;
-	margin: 30px auto;
+	margin: 0px auto;
 	text-align: center;
 	margin-bottom: 0px;
 }

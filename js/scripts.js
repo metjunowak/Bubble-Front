@@ -55,7 +55,15 @@ $(document).ready(function() {
     $('#navigation').animate({height:110},700)
   }
 
-  console.log(breakPoints);
+  $('.nav-link').click(function(event) {
+    event.preventDefault();
+    var a = $(this).attr('href').substring(1);
+    var b = getBreakPoints(a)-$('#'+a).height();
+    $(window).scrollTop(b);
+    console.log(b);
+  });
+
+
 
 	$(window).scroll(function(event) {
    	var st = $(this).scrollTop();
@@ -72,7 +80,7 @@ $(document).ready(function() {
         $('.nav-link').removeClass('active');
         $('a[href="#'+divs[key]+'"]').addClass('active');
 
-        if(st + $(window).height() > $(document).height() - 30) {
+        if(st + $(window).height() > $(document).height() - 10) {
           $('.nav-link').removeClass('active');
           $('a[href="#contact"]').addClass('active');
         }
