@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
   var menuHeight = 50;
-  var divs = new Array('start','scenarios','offer','faq','photo','contact');
+  var divs = new Array('start', 'faq', 'offer', 'scenarios', 'photo', 'contact');
 
   var breakPoints = [0];
   var flag = true;

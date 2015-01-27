@@ -328,7 +328,7 @@ body, html {
 /* OFFER */
 
 #offer {
-	min-height: 460px;
+	min-height: 630px;
 	background-color: #18bc9c;
 }
 
@@ -344,16 +344,17 @@ body, html {
 	text-align: left;
 	margin-left: 50px;
 	float: left;
-	width: 390px;
+	width: 590px;
 }
 
-#offer .content h1, #contact-data h1 {
+#offer .content h1, #contact-data h1, #photo h1, #faq h1 {
 	color: #fff;
 	font-size: 50px;
 	font-family: "Open Sans";
 	font-weight: 300;
 	margin-top: 10px;
 	margin-left: 70px;
+	margin-bottom: 20px;
 	text-align: right;
 }
 
@@ -374,13 +375,21 @@ body, html {
 }
 
 #faq {
-	height: 500px;
+	height: 250px;
 	background-color: #fff;
 }
 
 #photo {
-	height: 500px;
+	height: 250px;
 	background-color: #fff;
+}
+
+#photo .content  h1, #faq .content  h1 {
+	text-align: center;
+}
+
+#photo h1, #faq h1 {
+	color: #000; 
 }
 
 #contact {
