@@ -328,23 +328,29 @@ body, html {
 /* OFFER */
 
 #offer {
-	min-height: 630px;
 	background-color: #18bc9c;
+	width: 100%;
 }
 
 #offer .content {
-	width: 100%;
-	text-align: left;
-	vertical-align: top;
+	width: 100%;  
 }
 
-#offer .content div {
-	position: absolute;
+#offer .content .video-container {
 	display: inline-block;
-	text-align: left;
-	margin-left: 50px;
-	float: left;
-	width: 590px;
+	width: 50%;
+	vertical-align: top;
+	height: 542px;
+	max-width: 800px;
+	margin-top: 50px;
+}
+
+#offer .content .text-container {
+	display: inline-block;
+	margin-left: 4%;
+	width: 45%;
+	vertical-align: top;
+	max-width: 600px;
 }
 
 #offer .content h1, #contact-data h1, #photo h1, #faq h1 {
@@ -367,11 +373,8 @@ body, html {
 }
 
 .offer-img {
-	display: inline-block;
-	float: left;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
+	width: 100%; 
+	height: 70%;
 }
 
 #faq {
