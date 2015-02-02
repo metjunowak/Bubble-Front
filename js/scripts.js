@@ -112,4 +112,13 @@ $(document).ready(function() {
    	lastScrollTop = st;
 	});
 
+  $('.cd-faq-trigger').on('click', function() {
+    var parent = $(this).parent();
+    parent.children(".cd-faq-content").toggle(500);
+  });
+
+  $('.cd-faq-content').on('click', function() {
+    $(this).toggle(200);  
+  });
+
 });

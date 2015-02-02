@@ -271,8 +271,8 @@ body, html {
 #start {
 	height: 100%;
 	min-height: 779px;
-	background: url('../img/bg.jpg');
-	background-size: 100%;
+	background: url('../img/bg.jpg') no-repeat;
+	background-size: 100% auto;
 	background-position: 0 -110px;
 	text-align: center;
 }
@@ -333,7 +333,8 @@ body, html {
 }
 
 #offer .content {
-	width: 100%;  
+	width: 100%;
+	padding-bottom: 20px;  
 }
 
 #offer .content .video-container {
@@ -378,8 +379,62 @@ body, html {
 }
 
 #faq {
-	height: 250px;
+	background: url('../img/question.png') no-repeat;
 	background-color: #fff;
+	text-align: left;
+	padding-top: 40px;
+	color: #bbb;
+	font-size: 50px;
+	background-position: center bottom;
+}
+
+
+#faq .cd-faq-group {
+	list-style: none;
+	padding-left: 0px;
+	width: 40%;
+	display: inline-block;
+	margin-left: 5%;
+	vertical-align: top;
+	margin-top: 0px;
+	padding-bottom: 20px;
+}
+
+#faq .cd-faq-group.sec {
+	text-align: right;
+}
+
+#faq .cd-faq-group li {
+	display: block;
+	font-size: 25px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	color: #222;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#faq li a {
+	text-decoration: none;
+	color: #2c3e50;
+}
+
+#faq li a:hover {
+	text-decoration: none;
+	color: #18bc9c;
+}
+
+#faq .cd-faq-group.sec li span {
+	font-size: 60px;
+	display: block;
+	position: relative;
+}
+
+#faq .cd-faq-content {
+	font-size: 15px;
 }
 
 #photo {
