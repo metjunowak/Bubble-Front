@@ -121,4 +121,40 @@ $(document).ready(function() {
     $(this).toggle(200);  
   });
 
+  var slideWidth = $('#photo .content').width();
+  $('#photo .slide').width(slideWidth);
+  var clickDisabled = false;
+
+  $('#photo .slide-nav.next').click(function() {
+    if (clickDisabled) {
+      return;
+    }
+    else {
+      var marginLeft = $('#photo .slider').css("margin-left");
+      marginLeft = marginLeft.substring(0, marginLeft.length - 2);
+      var newMargin = marginLeft - slideWidth;
+      $('#photo .slider').animate({
+        marginLeft: newMargin
+      }, 800);
+      clickDisabled = true;
+      setTimeout(function(){clickDisabled = false;}, 1000);
+    }
+  });
+
+  $('#photo .slide-nav.back').click(function() {
+    if (clickDisabled) {
+      return;
+    }
+    else {
+      var marginLeft = $('#photo .slider').css("margin-left");
+      marginLeft = marginLeft.substring(0, marginLeft.length - 2);
+      var newMargin = parseInt(marginLeft) + slideWidth;
+      $('#photo .slider').animate({
+        marginLeft: newMargin
+      }, 800);
+      clickDisabled = true;
+      setTimeout(function(){clickDisabled = false;}, 1000);
+    }
+  });
+
 });

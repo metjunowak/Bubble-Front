@@ -330,6 +330,7 @@ body, html {
 #offer {
 	background-color: #18bc9c;
 	width: 100%;
+	border-bottom: 1px solid #0c725e;
 }
 
 #offer .content {
@@ -376,6 +377,8 @@ body, html {
 .offer-img {
 	width: 100%; 
 	height: 70%;
+	border: 3px solid #0c725e;
+	border-left: 0px;
 }
 
 #faq {
@@ -440,8 +443,53 @@ body, html {
 }
 
 #photo {
-	height: 250px;
-	background-color: #fff;
+	background-color: #fbfad6;
+	border-top: 1px solid #f4ed35;
+}
+
+#photo .content {
+	padding-top: 30px;
+	height: 420px;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+#photo .slider {
+	width: 500%;
+	list-style: none;
+	padding: 0px;
+}
+
+#photo .slide-nav {
+	width: 110px;
+	height: 420px;
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 150px;
+}
+
+#photo .slide-nav.back {
+	float: left;
+	display: inline-block;
+	background: url('../img/arrows.png') no-repeat 0 0; width: 39px; height: 138px;
+	opacity: 0.9;
+}
+
+#photo .slide-nav.next {
+	float: right;
+	display: inline-block;
+	background: url('../img/arrows.png') no-repeat -53px 0; width: 39px; height: 138px;
+}
+
+#photo .slider .slide img { 
+	border: 1px solid #f4ed35;
+}
+
+#photo .slider .slide {
+	float: left;
+	text-align: center;
+	list-style: none;
 }
 
 #photo .content  h1, #faq .content  h1 {
