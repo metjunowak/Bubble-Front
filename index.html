@@ -12,7 +12,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin-ext' rel='stylesheet' type='text/css'>
 		
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/LocalBusiness">
 		<nav id="navigation">
 			<ul>
 				<li><a href="#start" class="nav-link active"><span class="home"></span>Start</a></li>
@@ -27,7 +27,7 @@
 			<div id="gradient">
 				<img src="img/testimonial.png" class="testimonial" alt="Bubble Football w Trzebini - Bigball.pl">
 			</div>
-			<div id="logo"></div>
+			<div id="logo" itemprop="logo"></div>
 		</div>
 		<div id="faq">
 			<div class="content">
@@ -136,11 +136,11 @@
 		</div>
 		<div id="contact">
 		</div>
-		<div id="contact-data">
+		<div id="contact-data" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 			<h1>Kontakt</h1>
-			<p><span class="contact-phone-ico"></span><u>Tel:</u> 695 531 777</p>
-			<p><span class="contact-mail-ico"></span><u>Mail:</u> artur@bigball.pl</p>
-			<p>Trzebinia</p>
+			<p itemprop="telephone"><span class="contact-phone-ico"></span><u>Tel:</u> 695 531 777</p>
+			<p itemprop="email"><span class="contact-mail-ico"></span><u>Mail:</u> artur@bigball.pl</p>
+			<p itemprop="addressLocality">Trzebinia</p>
 		</div>
 		<script src="js/jquery-1.11.1.js"></script>
 		<script src="js/scripts.js"></script>
