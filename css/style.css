@@ -473,7 +473,7 @@ body, html {
 	float: left;
 	display: inline-block;
 	background: url('../img/arrows.png') no-repeat 0 0; width: 39px; height: 138px;
-	opacity: 0.9;
+	opacity: 0.2;
 }
 
 #photo .slide-nav.next {
