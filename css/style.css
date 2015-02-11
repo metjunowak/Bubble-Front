@@ -449,13 +449,13 @@ body, html {
 
 #photo .content {
 	padding-top: 30px;
-	height: 420px;
+	height: 470px;
 	padding-bottom: 50px;
 	overflow: hidden;
 }
 
 #photo .slider {
-	width: 500%;
+	width: 800%;
 	list-style: none;
 	padding: 0px;
 }
